@@ -19,7 +19,7 @@ def emotion_detector(text_to_analyse):
             'fear': None,
             'joy': None,
             'sadness': None,
-            'dominant': None
+            'dominant_emotion': None
         }
 
     return result
@@ -35,6 +35,6 @@ def process_emotions(text):
             max_value = value
             dominant_emotion = key
  
-    result["dominant"] = dominant_emotion
+    result["dominant_emotion"] = dominant_emotion
 
     return result
